@@ -1,40 +1,39 @@
-# ETL_RollerCoaster
+# Roller Coaster ETL Project
 
-Clone this repo.
-
-
-Create a file named config.py in the working directory. It must contain the following:
-user = "postgres"
-password = [enter your password]
-host = "localhost"
-port = 5432
-database = "coaster_db"
+1. Clone this repo [https://github.com/pammeyer80/ETL_RollerCoaster](https://github.com/pammeyer80/ETL_RollerCoaster) locally.
 
 
-Launch pgAdmin.
+1. Create a file named [config.py](config.py) in the working directory. It must contain the following:
+
+    >   user = "postgres" <br/>
+        password = [enter your password] <br/>
+        host = "localhost" <br/>
+        port = 5432 <br/>
+        database = "coaster_db" <br/>
+
+1. Launch pgAdmin.
+
+1. Create a new database named coaster_db.
+
+1. Run the script in the Resources folder called [sql_CreateTables_script.sql](/resources/sql_CreateTables_script.sql) or copy-paste the following into a new query window: <br/>
+    >   CREATE TABLE coaster ( <br/>
+        coaster_id serial PRIMARY KEY <br/>
+        ,coaster VARCHAR(150)  <br/>
+        ,park VARCHAR(150) <br/>
+        ,city VARCHAR(150) <br/>
+        ,state VARCHAR(150) <br/>
+        ,type VARCHAR(150) <br/>
+        ,year_opened INT  <br/>
+        ); <br/> <br/>
+    >   CREATE TABLE worldwide (  <br/>
+        worldwide_ID SERIAL PRIMARY KEY  <br/>
+        ,park VARCHAR(150)  <br/>
+        ,country VARCHAR(50)  <br/>
+        ,visits_2000_2019 INT  <br/>
+        ); <br/>
+
+1. Open a terminal window, type **source activate PythonData**, hit enter, type **jupyter notebook** and hit enter.
 
 
-Create a new database named coaster_db.
-
-
-Run the script in the Resources folder called sql_CreateTables_script.sql or copy-paste the following into a new query window:
-CREATE TABLE coaster (
-coaster_id serial PRIMARY KEY
-,coaster VARCHAR(150) 
-,park VARCHAR(150)
-,city VARCHAR(150)
-,state VARCHAR(150)
-,type VARCHAR(150)
-,year_opened INT
-);
-CREATE TABLE worldwide (
-worldwide_ID SERIAL PRIMARY KEY
-,park VARCHAR(150)
-,country VARCHAR(50)
-,visits_2000_2019 INT
-);
-Open a terminal window, type source activate PythonData, hit enter, type Jupyter Notebook and hit enter.
-
-
-Run the Jupyter Notebook in the working directory called Roller Coaster ETL.ipynb.
+1. Run the Jupyter Notebook in the working directory called [RollerCoasterETL.ipynb](RollerCoasterETL.ipynb).
 
