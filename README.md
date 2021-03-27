@@ -3,7 +3,7 @@
 1. Clone this repo [https://github.com/pammeyer80/ETL_RollerCoaster](https://github.com/pammeyer80/ETL_RollerCoaster) locally.
 
 
-1. Create a file named [config.py](config.py) in the working directory. It must contain the following:
+1. Create a file named config.py in the working directory. It must contain the following:
 
     >   user = "postgres" <br/>
         password = [enter your password] <br/>
