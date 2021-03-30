@@ -13,9 +13,9 @@
 
 1. Launch pgAdmin.
 
-1. Create a new database named coaster_db.
+1. Within pgAdmin, create a new database named coaster_db.
 
-1. Run the script in the Resources folder called [sql_CreateTables_script.sql](/resources/sql_CreateTables_script.sql) or copy-paste the following into a new query window: <br/>
+1. From within pgAdmin, run the script in the Resources folder called [sql_CreateTables_script.sql](/resources/sql_CreateTables_script.sql) or copy-paste the following into a new query window: <br/>
     >   CREATE TABLE coaster ( <br/>
         coaster_id serial PRIMARY KEY <br/>
         ,coaster VARCHAR(150)  <br/>
@@ -34,6 +34,7 @@
 
 1. Open a terminal window, type **source activate PythonData**, hit enter, type **jupyter notebook** and hit enter.
 
+1. Open the Jupyter Notebook called [RollerCoasterETL.ipynb](RollerCoasterETL.ipynb) in the working directory.
 
-1. Run the Jupyter Notebook in the working directory called [RollerCoasterETL.ipynb](RollerCoasterETL.ipynb).
+1. Choose Restart and Run All, or run each cell one by one.
 
